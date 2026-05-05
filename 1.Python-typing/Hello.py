@@ -1,6 +1,20 @@
 from typing import Optional, Any
 
 
+# Today i learned about python typing module to enable type hints in python.
+# Type hints are a way to indicate the expected data types of variables, 
+# function parameters, and return values. They can help improve code readability 
+# and catch potential bugs during development.
+
+# using mypy package and vs code extension to see the typing errors in my code.
+
+# also learned this module is not used for runtime type checking,
+# but rather for static analysis and documentation purposes.
+
+
+# Here are some examples of how to use type hints in Python:
+
+
 def add(a: int, b: int) -> int:
     return a + b
 
