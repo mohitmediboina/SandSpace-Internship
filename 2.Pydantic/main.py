@@ -6,15 +6,19 @@ from pydantic import (
     Field,
     EmailStr,
     ValidationError,
-    field_validator,
-    ConfigDict
 )
 
-from pydantic_settings import BaseSettings
 
+# python typing is only for IDE and improve the developer experience,
+# it does not enforce type checking at runtime. So the solution is pydantic which is a 
+# data validation library that uses python type hints to validate the data at runtime. 
 
+# I Learned about pydantic which is used to data validation and auto conversion of data types.
+# It is very useful when we are working with APIs and we want to validate the 
+# data coming from the client. 
 
-print("\n========== BASIC TYPING ==========\n")
+# I learned about BaseModel , field, EmailStr, ValidationError, Literal and Enum from pydantic.
+
 
 name: str = "Mohit"
 age: int = 21
@@ -28,7 +32,6 @@ print(is_student)
 
 
 
-print("\n========== SIMPLE MODEL ==========\n")
 
 
 class User(BaseModel):
